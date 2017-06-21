@@ -12,3 +12,16 @@
 	background-attachment: fixed;
 	height: 100vh;
 }
+
+.align-info{
+	position: absolute;
+	right: 0;
+}
+
+/*CONDUCE*/
+#conduce{
+	background-image: url(../img/conduce.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 500px;
+}
