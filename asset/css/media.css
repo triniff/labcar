@@ -1,0 +1,39 @@
+@media (max-width: 995px) and (min-width: 1px){
+	.mobile-version{
+		margin: 0 auto;
+		text-align: center;
+	}
+	.mobile-version img{
+		margin: 0 auto;
+		text-align: center;
+	}
+	.mobile-container{
+		border: 1px solid #fff;
+		margin: 50px;
+		padding: 50px;
+	}
+	.mobile-container h3{
+		font-weight: 700;
+		font-size: 30px;
+		margin-bottom: 30px;
+	}
+	#tarifas{
+		padding: 20px;
+	}
+	footer{
+		padding: 20px;
+	}
+	.list{
+		float: left;
+	}
+	.align-bottom{
+		position: initial;
+	}
+	.social{
+		float: right;
+	}
+	.app-img{
+		margin-top: 50px;
+	}
+
+}
