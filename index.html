@@ -15,7 +15,7 @@
 </head>
 <body>
 	<!-- NAVBAR -->
-	<nav class="navbar navbar-default navbar-fixed-top">
+	<nav class="navbar navbar-default">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 col-lg-12 navbar-header">
@@ -133,20 +133,40 @@
 	<section id="tarifas">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
-					<h4>Tarifas</h4>
-					<p>Consulta las tarifas LabCar aquí</p>
-					<div class="form-group">
-						<i class="fa fa-circle-o" aria-hidden="true"></i>
-						<input type="text" class="form-control" id="origen">
+				<div class="col-md-4 col-lg-4 col-xs-12 col-sm-12">
+					<div class="row">
+						<div class="col-md-12 col-lg-12">
+							<h4>Tarifas</h4>
+							<p>Consulta las tarifas LabCar aquí</p>
+						</div>
 					</div>
-					<div class="form-group">
-						<i class="fa fa-chevron-right" aria-hidden="true"></i>
-						<input type="text" class="form-control" id="destino">
+					<div class="row">
+						<div class="col-md-1 col-lg-1">
+							<i class="fa fa-circle-o" aria-hidden="true" class="inputs-ruta"></i>
+						</div>
+						<div class="col-md-11 col-lg-11">
+							<div class="form-group">
+								<input type="text" class="form-control" id="origen" class="inputs-ruta" placeholder="Ingrese su punto destino">
+							</div>
+						</div>
 					</div>
-					<button type="button" class="btn btn-labcar" id="ruta">Trazar ruta</button>
+					<div class="row">
+						<div class="col-md-1 col-lg-1">
+							<i class="fa fa-chevron-right" aria-hidden="true" class="inputs-ruta"></i>
+						</div>
+						<div class="col-md-11 col-lg-11">
+							<div class="form-group">
+								<input type="text" class="form-control" id="destino" class="inputs-ruta" placeholder="Ingrese su destino">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 btn-ruta">
+							<button type="button" class="btn btn-labcar-ruta" id="ruta">¡TRAZAR RUTA!</button>
+						</div>
+					</div>
 				</div>
-				<div class="col-md-6 col-lg-6 hidden-sm hidden-xs" id="map">
+				<div class="col-md-8 col-lg-8 hidden-sm hidden-xs" id="map">
 				</div>
 			</div>
 		</div>
@@ -208,5 +228,9 @@
 	<!-- Bootstrap Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script src="asset/js/main.js"></script>
+	<!-- APi Google maps -->
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD24FKNbfWSBxocml1V5t0X9DSb9V1Kd2c&callback=initMap">
+    </script>
 </body>
 </html>
