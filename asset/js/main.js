@@ -1,7 +1,7 @@
 function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {
     mapTypeControl: false,
-    center: {lat: -33.8688, lng: 151.2195},
+    center: {lat: -33.4372, lng:  -70.6506},
     zoom: 13
   });
 
@@ -85,12 +85,3 @@ AutocompleteDirectionsHandler.prototype.route = function() {
       }
     });
 };
-var ruta = document.getElementById("ruta");
-    ruta.addEventListener("click", function(){
-      if (document.getElementById('origen').value == "") {
-            alert("Debes ingresar una ruta")
-      }
-      else{
-        AutocompleteDirectionsHandler.prototype.route()
-      }
-    })
