@@ -2,8 +2,42 @@
 	margin: 0;
 	padding: 0;
 	font-family: 'Lato', sans-serif;
+	color: #fff;
+}
+.align-info{
+	position: absolute;
+	right: 0;
+}
+.btn-labcar{
+	padding: 10px 20px;
+	font-size: 17px;
+	font-weight: 700;
+	color: black;
+	background-color: #fff;
+	border-radius: 8px;
+	margin: 40px 0;
+}
+h4{
+	font-size: 30px;
+}
+p{
+	font-size: 20px;
 }
 
+/*NAVBAR*/
+.navbar-default{
+	background-color: #fff;
+	border: none;
+	padding: 30px;
+	font-size: 16px;
+}
+.navbar-labcar , .logo{
+	padding: 0;
+	margin: 0;
+}
+.navbar-default .navbar-nav li a:hover{
+	color: #f7b617;
+}
 /*HEADER*/
 #disfruta{
 	background-image: url(../img/taxi.jpg);
@@ -12,10 +46,62 @@
 	background-attachment: fixed;
 	height: 100vh;
 }
+#disfruta img{
+	width: 100px;
+	margin-left: 10px;
+	margin-top: 12px;
+	padding: 0;
+}
+#disfruta input{
+	background-color: transparent;
+	width: 100%;
+	border: none;
+	border-radius: none;
+	border-bottom: 1px solid #fff;
+}
+.inputs{
+	margin: 10px 0;
+}
+.disfruta-section{
+	background-color: #f7b617;
+	padding: 30px;
+	margin-top: 150px;
+	color: #fff;
+}
+.disfruta-section h3{
+	margin: 0;
+	font-size: 30px;
+	font-weight: 700;
+}
+.registrate{
+	display: inline-block;
+	font-size: 25px;
+	margin: 20px 0;
+}
+.mobile-version btn{
+}
 
-.align-info{
-	position: absolute;
-	right: 0;
+/*DESCARGA APP*/
+
+#app{
+	background-color: #f7b617;
+	color: #fff;
+	padding: 45px 0;
+}
+.mobile-contenedor{
+	border: 2px solid #fff;
+	width: 90%;
+	padding: 40px;
+}
+.mobile-contenedor img{
+	margin-left: 50px;
+}
+
+.mobile-contenedor h4{
+	margin: 20px 0;
+}
+.mobile-contenedor p{
+	margin: 30px 0;
 }
 
 /*CONDUCE*/
@@ -24,4 +110,15 @@
 	background-size: cover;
 	background-position: center;
 	height: 500px;
+}
+.conduce-text{
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 500px;
+	color: #fff;
+	padding: 80px 50px;
+}
+
+.btn-conduce {
+	background-color: #f7b617;
+	color: #fff;
 }

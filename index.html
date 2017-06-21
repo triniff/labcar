@@ -18,16 +18,16 @@
 	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12 col-lg-12">
+				<div class="col-md-12 col-lg-12 navbar-header">
 					<div class="navbar-header">
-						<img src="asset/img/logo.png" alt="logo labcar">
+						<img src="asset/img/logo.png" alt="logo labcar" class="logo">
 						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" id="button-menu">	
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
 					</div>
-					<div class="navbar-collapse collapse">
+					<div class="navbar-collapse collapse navbar-labcar">
 						<ul class="nav navbar-nav navbar-right">
 							<li><a href="#fundation">Viaja</a></li>
 							<li><a href="#koalas">Conduce</a></li>
@@ -42,35 +42,33 @@
 	<section id="disfruta">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-5 col-lg-5 align-info hidden-sm hidden-xs">
+				<div class="col-md-5 col-lg-5 align-info hidden-sm hidden-xs disfruta-section">
 					<div class="row">
 						<div class="col-md-12 col-lg-12">
 							<h3>Disfruta del viaje</h3>
 							<h3>Eres dueño de tu tiempo</h3>
-							<h6>Viaja con</h6>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-3 col-lg-3">
+						<div class="col-md-12 col-lg-12">
+							<h6 class="registrate">Viaja con</h6>
+							<img src="asset/img/logo-blanco.png" alt="logo Labcar blanco" class="registrate img-responsive">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 col-lg-12">
 							<p>REGÍSTRATE</p>
 						</div>
-						<div class="col-md-9 col-lg-9">
-							<img src="asset/img/logo-blanco.png" alt="logo Labcar blanco">
-						</div>
 					</div>
-					<div class="row">
-						<div class="col-md-4 col-lg-4">
-							<div class="form-group">
-							    <input type="text" class="form-control" id="registrate-input">
-							</div>
+					<div class="row inputs">
+						<div class="col-md-5 col-lg-5">
+						    <input type="text" id="registrate-input">
 						</div>
-						<div class="col-md-4 col-lg-4">
-							<p>o bien</p>
+						<div class="col-md-2 col-lg-2">
+							<p>O bien</p>
 						</div>
-						<div class="col-md-4 col-lg-4">
-							<div class="form-group">
-							   	<input type="text" class="form-control" id="conduce-input">
-							</div>
+						<div class="col-md-5 col-lg-5">
+						   	<input type="text" id="conduce-input">
 						</div>
 					</div>
 					<div class="row">
@@ -81,23 +79,30 @@
 				</div>
 			</div>
 			<div class="row mobile-version">
-				<div class="col-md-5 col-lg-5 align-info hidden-md hidden-lg">
-					<h3>Comienza a viajar con</h3>
-					<img src="asset/img/logo-blanco.png" alt="logo Labcar blanco">
-					<button type="button" class="btn btn-labcar">Descarga la app</button>
+				<div class="col-md-5 col-lg-5 align-info hidden-md hidden-lg disfruta-section">
+					<div class="row">
+						<div class="col-xs-12 col-ms-12">
+							<h3>Comienza a viajar con</h3>
+							<img src="asset/img/logo-blanco.png" alt="logo Labcar blanco">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-ms-12">
+							<button type="button" class="btn btn-labcar">Descarga la app</button>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 	<!-- DESCARGA APP -->
 	<section id="app">
-		<div class="container">
-			<div class="row mobile">
-				<div class="col-md-5 col-lg-5 col-sm-12 col-xs-12">
-					<h3>La nueva app</h3>
+		<div class="container-full">
+			<div class="row mobile-contenedor hidden-xs hidden-sm">
+				<div class="col-md-5 col-lg-5">
 					<img src="asset/img/celular.png" alt="app labcar" class="img-responsive">
 				</div>
-				<div class="col-md-5 col-lg-5 hidden-xs hidden-sm">
+				<div class="col-md-5 col-lg-5">
 					<h4>Descarga la nueva app</h4>
 					<p>La versión actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.</p>
 					<p>Con tan solo tocar un botón, un auto llega justo a tu ubicación. Súbete y no te preocupes: tu conductor sabe exactamente a dodnde ir.</p>
@@ -105,6 +110,8 @@
 			</div>
 			<div class="row mobile-version hidden-lg hidden-md">
 				<div class="col-sm-12 col-xs-12">
+					<h3>La nueva app</h3>
+					<img src="asset/img/celular.png" alt="app labcar" class="img-responsive">
 					<h3>Llega a tu destino aún más rápido</h3>
 				</div>
 			</div>
@@ -114,10 +121,10 @@
 	<section id="conduce">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-5 col-lg-5 align-info col-xs-12 col-sm-12">
+				<div class="col-md-5 col-lg-5 align-info col-xs-12 col-sm-12 conduce-text">
 					<h4>Conduce cuando quieras</h4>
 					<p>LabCar es una opción flexible para alcanzar tus metas financieras.</p>
-					<button type="button" class="btn btn-labcar">Conviértete en un conductor</button>
+					<button type="button" class="btn btn-labcar btn-conduce">Conviértete en un conductor</button>
 				</div>
 			</div>
 		</div>
@@ -153,7 +160,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-3 col-lg-3 col-sm-6 col-xs-6  col-xs-offset-6 col-sm-offset-6 social">
+				<div class="col-md-3 col-lg-3 col-sm-6 col-xs-6 social">
 					<i class="fa fa-facebook" aria-hidden="true"></i>
 					<i class="fa fa-twitter" aria-hidden="true"></i>
 					<i class="fa fa-linkedin" aria-hidden="true"></i>
