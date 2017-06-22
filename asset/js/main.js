@@ -1,3 +1,10 @@
+var botonMenu = document.getElementsByClassName("navbar-toggle")[0];
+  botonMenu.addEventListener("click", function(){
+    var nav = document.getElementsByClassName("navbar-collapse")[0];
+    nav.classList.toggle("in");
+  })
+
+
 function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {
     mapTypeControl: false,
@@ -85,3 +92,4 @@ AutocompleteDirectionsHandler.prototype.route = function() {
       }
     });
 };
+

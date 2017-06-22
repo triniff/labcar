@@ -1,4 +1,22 @@
 @media (max-width: 995px) and (min-width: 1px){
+	.navbar-default .navbar-nav li {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	.navbar-header {
+		margin: 0 auto;
+		text-align: center;
+	}
+	.navbar-header img{
+		width: 100px;
+	}
+	.navbar-toggle{
+		float: left;
+	}
+	.navbar-labcar ul li{
+		text-align: left;
+	}
 	.mobile-version{
 		margin: 0 auto;
 		text-align: center;
