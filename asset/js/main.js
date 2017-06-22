@@ -117,4 +117,3 @@ AutocompleteDirectionsHandler.prototype.route = function() {
       }
     });
 };
-
