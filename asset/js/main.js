@@ -13,8 +13,33 @@ function initMap() {
   });
 
   new AutocompleteDirectionsHandler(map);
+function buscar(){
+    if(navigator.geolocation){
+      navigator.geolocation.getCurrentPosition(funcionExito, funcionError);
+    }
+  }
+  var latitud,longitud;
+  var funcionExito = function(posicion){
+    latitud = posicion.coords.latitude;
+    longitud = posicion.coords.longitude;
 
+    var miUbicacion = new google.maps.Marker({
+      position: {lat:latitud, lng:longitud},
+      animation: google.maps.Animation.DROP,
+      map: map,
+      icon:"asset/img/taxi.png"
+    });
+
+    map.setZoom(17);
+    map.setCenter({lat:latitud, lng:longitud});
+  }
+
+  var funcionError = function(error){
+    alert("Tenemos un problema con encontrar tu ubicación");
+  }
+buscar()
 }
+
 
 //TRAZANDO RUTA
 function AutocompleteDirectionsHandler(map) {

@@ -1,8 +1,7 @@
 @media (max-width: 995px) and (min-width: 1px){
+	/*NAVBAR*/
 	.navbar-default .navbar-nav li {
-		margin: 0;
-		padding: 0;
-		box-sizing: border-box;
+		padding: 20px 0;
 	}
 	.navbar-header {
 		margin: 0 auto;
@@ -17,6 +16,10 @@
 	.navbar-labcar ul li{
 		text-align: left;
 	}
+	.logo{
+		margin-top: 10px;
+	}
+	/*HEADER*/
 	.mobile-version{
 		margin: 0 auto;
 		text-align: center;
@@ -25,6 +28,10 @@
 		margin: 0 auto;
 		text-align: center;
 	}
+	.disfruta-section{
+		padding: 20px 10px;
+	}
+	/*APP*/
 	.mobile-container{
 		border: 1px solid #fff;
 		margin: 50px;
@@ -35,9 +42,11 @@
 		font-size: 30px;
 		margin-bottom: 30px;
 	}
+	/*TARIFAS*/
 	#tarifas{
 		padding: 20px;
 	}
+	/*FOOTER*/
 	footer{
 		padding: 20px;
 	}
